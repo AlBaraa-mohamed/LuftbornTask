@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Product>
+
+<h1>Products</h1>
+<p><a class="btn btn-primary" href="@Url.Action("Create")">Create New</a></p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Price.ToString("C")</td>
+                <td>
+                    <a class="btn btn-warning" href="@Url.Action("Edit", new { id = item.Id })">Edit</a>
+                    <a class="btn btn-danger" href="@Url.Action("Delete", new { id = item.Id })">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

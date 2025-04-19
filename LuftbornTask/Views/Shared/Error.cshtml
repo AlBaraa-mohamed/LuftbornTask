@@ -1,0 +1,12 @@
+﻿@using LuftbornTask.src.Domain.Entities
+@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+    var statusCode = ViewData["StatusCode"] ?? 500;
+}
+
+
+<h1 class="text-danger">Oops!</h1>
+<h2 class="text-danger">Something went wrong.</h2>
+<p>Status Code: <strong>@statusCode</strong></p>
+<p>Please try again later or contact support.</p>
