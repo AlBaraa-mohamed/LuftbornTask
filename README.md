@@ -1,6 +1,6 @@
-# LuftbornTask
+# Dotnet Clean Architecture
 
-LuftbornTask is a Razor Pages project built with ASP.NET Core targeting .NET 9. It provides a product management system where users can create, edit, delete, and view products. The project also supports different pricing strategies for products.
+Dotnet Clean Architecture is a Razor Pages project built with ASP.NET Core targeting .NET 9. It provides a product management system where users can create, edit, delete, and view products. The project also supports different pricing strategies for products.
 
 ## Features
 
